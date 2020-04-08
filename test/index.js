@@ -9,7 +9,7 @@ test('Correct output returned', function (t) {
     .get('/')
     .expect(200)
     .end(function (err, res) {
-      var expected = 'Hello Cloud Natives';
+      var expected = 'Hello Cloud Noobs';
 
       t.error(err, 'No error');
       t.same(res.body, expected, 'Output as expected');
