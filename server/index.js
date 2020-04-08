@@ -2,10 +2,10 @@
 
 var express = require('express');
 var app = express();
-var users = ['John', 'Betty', 'Hal'];
 
-app.get('/api/users', function (req, res) {
-  res.json(users);
+app.get('/', function (req, res) {
+  //res.set('Content-Type', 'text/plain');
+  res.status(200).json('Hello Cloud Natives');
 });
 
 module.exports = app;

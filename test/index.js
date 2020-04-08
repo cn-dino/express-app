@@ -4,16 +4,15 @@ var test = require('tape');
 var request = require('supertest');
 var app = require('../server');
 
-test('Correct users returned', function (t) {
+test('Correct output returned', function (t) {
   request(app)
-    .get('/api/users')
-    .expect('Content-Type', /json/)
+    .get('/')
     .expect(200)
     .end(function (err, res) {
-      var expectedUsers = ['John', 'Betty', 'Hal'];
+      var expected = 'Hello Cloud Natives';
 
       t.error(err, 'No error');
-      t.same(res.body, expectedUsers, 'Users as expected');
+      t.same(res.body, expected, 'Output as expected');
       t.end();
     });
 });
