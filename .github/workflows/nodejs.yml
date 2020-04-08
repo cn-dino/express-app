@@ -27,6 +27,5 @@ jobs:
     - run: echo "************** SECRETZ HERE *****************"
     - run: echo ${{ secrets.shhh }}
     - run: npm ci
-    - run: npm test
       env:
         CI: true
