@@ -1,5 +1,5 @@
 'use strict';
-
+// Comments are great
 var express = require('express');
 var app = express();
 
