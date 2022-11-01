@@ -29,6 +29,6 @@
   "devDependencies": {
     "supertest": "^0.15.0",
     "tap-spec": "^2.2.1",
-    "tape": "^3.5.0"
+    "tape": "^5.6.1"
   }
 }
