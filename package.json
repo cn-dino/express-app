@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/knownasilya/testing-express-api",
   "dependencies": {
-    "express": "^4.11.2"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "supertest": "^0.15.0",
